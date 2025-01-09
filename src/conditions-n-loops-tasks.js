@@ -24,9 +24,8 @@
 function isPositive(number) {
   if (number >= 0) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 /**
@@ -44,15 +43,12 @@ function isPositive(number) {
  */
 function getMaxNumber(a, b, c) {
   if (a >= b && a >= c) {
-      console.log(a);
-      return a;
-  } else if (b >= a && b >= c) {
-      console.log(b);
-      return b;
-  } else {
-      console.log(c);
-      return c;
+    return a;
   }
+  if (b >= a && b >= c) {
+    return b;
+  }
+  return c;
 }
 
 /**
