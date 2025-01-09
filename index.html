@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+ * Returns the maximum of three numbers without using Array and Math classes methods.
+ *
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @param {number} c - The third number.
+ * @return {number} The maximum of the three numbers.
+ *
+ * @example:
+ *  1, 2, 3       => 3
+ *  -5, 0, 5      => 5
+ *  -0.1, 0, 0.2  => 0.2
+ */
+        function getMaxNumber(a, b, c) {
+            if (a >= b && a >= c) {
+                console.log(a);
+                return a;
+            } else if (b >= a && b >= c) {
+                console.log(b);
+                return b;
+            } else {
+                console.log(c);
+                return c;
+            }
+        
+        }
+
+        getMaxNumber(1, 2, 3);
+        getMaxNumber(-5, 0, 5);
+        getMaxNumber(-0.1, 0, 0.2);
+
+    </script>
+    
+</body>
+</html>
